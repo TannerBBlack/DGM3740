@@ -422,7 +422,8 @@ header {
   header a {
     float: right;
     float: inline-end;
-    margin-top: 50px; }
+    margin-top: 50px;
+    color: white; }
 
 .search {
   width: 100%;
