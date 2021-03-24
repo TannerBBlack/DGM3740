@@ -75,3 +75,33 @@
 .card {
     width: 100%;
 }
+
+figure {
+    float: right;
+}
+
+#cruises-area {
+    // display: flex;
+    // flex-wrap: wrap;
+    .cruise-div {
+        display: flex;
+    }
+    figure {
+        flex-basis: 35%;
+        min-width: 35%;
+        margin-right: 2rem;
+    }
+    img {width: 100%;}
+    .readMore {
+        width: 10rem;
+        margin-bottom: 2rem;
+        float: right;
+    }
+    button {
+        border: none;
+        background-color: $primaryColor;
+        color: white;
+        padding: .5rem;
+        border-radius: 3rem;
+    }
+}

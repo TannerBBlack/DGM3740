@@ -1,6 +1,5 @@
-<?php incllude '_header.php'; ?>
+<?php include '_header.php'; ?>
 
-<main>
     <div class="your-class">
         <picture><source media="(max-width: 450px" srcset="images/cruise1small.jpg"><img src="images/cruise1.jpg"></picture>
         <picture><source media="(max-width: 450px" srcset="images/cruise2small.jpg"><img src="images/cruise2.jpg"></picture>
@@ -37,6 +36,6 @@
             <p class="title">Best beach in the caribean</p>
         </div>
     </div>
-</main>
 
-<?php incllude '_footer.php'; ?>
+
+<?php include '_footer.php'; ?>

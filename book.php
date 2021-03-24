@@ -1,5 +1,81 @@
-<?php incllude '_header.php'; ?>
-<main>
+<?php include '_header.php'; ?>
 
-</main>
-<?php incllude '_footer.php'; ?>
+    <h1>Book A Cruise</h1>
+    <form>
+
+        <label class="top">Full Name*<input type="text" name="fname" required></label>
+        <label class="top">Address Line<input type="text" name="address" placeholder="123 w state st."></label>
+        <label class="top">City<input type="text" name="city" placeholder="Pheonix"></label>
+        <label class="top">State
+            <select>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>				
+                            
+        </label>
+        <label class="top">Zipcode<input type="number" name="zip" placeholder="84058">
+        <label class="top">Phone<input type="text" name="phone" placeholder="1234567890"></label>
+        <label class="top">Email Address*<input type="text" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Cruise Selection
+            <select name="color">
+                <option value="">Please Select &#9662;</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="nassau">Nassau</option>
+                <option value="riviera">Mexican Riviera</option>
+                <option value="sydney">Sydney</option>
+            </select>
+        </label>
+
+        <button class="submitBtn">BOOK MY CRUISE!</button>
+    </form>
+
+    <?php include '_footer.php'; ?>

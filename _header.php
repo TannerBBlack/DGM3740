@@ -41,15 +41,15 @@
     </button>
 
     <ul id="primaryNav">
-      <li class="active"><a href="index.php">Home</a></li>
-      <li><a href="#">Cruises</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="cruises.php">Cruises</a></li>
         <li class="menu-item-has-children"><a href="#">Agents</a>
           <ul>
-            <li><a href="#">Sally Radgers</a></li>
-            <li><a href="#">Bobby Sorrell</a></li>
+            <li><a href="sally.php">Sally Radgers</a></li>
+            <li><a href="bobby.php">Bobby Sorrell</a></li>
           </ul>
         </li>
-      <li><a href="#">Book</a></li>
+      <li><a href="book.php">Book</a></li>
     </ul>
 
     <div class="wrap">
@@ -63,3 +63,4 @@
 
   </nav>
 </div>
+<main>
