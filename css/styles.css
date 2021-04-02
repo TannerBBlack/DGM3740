@@ -425,27 +425,6 @@ header {
     margin-top: 50px;
     color: white; }
 
-nav {
-  background-color: #111; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    nav ul li {
-      width: 25%;
-      float: left; }
-  nav li.active {
-    background-color: #5f5f5f; }
-  nav a {
-    display: block;
-    padding: .8rem 0;
-    /*44px min*/
-    color: #eee;
-    text-align: center;
-    text-decoration: none; }
-  nav a:hover {
-    background-color: #444; }
-
 .search {
   width: 100%;
   position: relative;
