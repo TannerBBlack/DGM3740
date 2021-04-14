@@ -422,7 +422,8 @@ header {
   header a {
     float: right;
     float: inline-end;
-    margin-top: 50px; }
+    margin-top: 50px;
+    color: white; }
 
 .search {
   width: 100%;
@@ -467,50 +468,35 @@ main {
   main figcaption {
     text-align: center;
     font-size: .8rem; }
-
-.blog-posts {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0; }
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  max-width: 250px;
-  height: 250px;
-  margin: 5px;
-  margin-bottom: 50px;
-  font-size: 16px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer; }
-  .card figure {
+  main div#myCards {
+    display: grid;
+    grid-template-columns: 1fr; }
+  main figure {
+    position: relative;
+    margin: 0;
     width: 100%; }
-    .card figure img {
+    main figure img {
+      width: 100%; }
+    main figure figcaption {
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      opacity: 75%; }
-  .card :hover {
-    opacity: 100%; }
-  .card .post-title {
-    color: #eee;
-    background-color: #444; }
-
-.card .title {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  margin-top: -20px;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 4px;
-  background-color: black;
-  opacity: 100%; }
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: .3rem .2vh; }
+  main section {
+    margin: 2%;
+    background-color: #76c2e6; }
+  main section div {
+    display: grid;
+    grid-template-columns: 1fr; }
+    main section div p {
+      margin-left: 10px; }
+  main .mapouter {
+    width: 100%;
+    margin: auto; }
+    main .mapouter iframe {
+      width: 100%; }
 
 footer {
   background-color: #17a8e4;
@@ -645,7 +631,8 @@ footer {
     padding: 0;
     z-index: 998;
     font-family: Verdana;
-    font-weight: normal; }
+    font-weight: normal;
+    text-decoration: none; }
 
   #primaryNav li a {
     display: block;
@@ -690,7 +677,8 @@ footer {
     border-top: solid 1px rgba(0, 0, 0, 0.2);
     font-size: 12px;
     padding: 10px 5%;
-    font-weight: normal; }
+    font-weight: normal;
+    list-style: none; }
 
   #primaryNav li:hover ul {
     display: block; } }
@@ -739,6 +727,18 @@ footer {
       left: auto;
       margin-left: 0; }
 
+  main div#myCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 65em;
+    margin: auto; }
+  main .mapouter {
+    width: 75%;
+    float: right; }
+    main .mapouter iframe {
+      width: 100%;
+      height: 15rem; }
+
   div.news {
     clear: both;
     column-count: 2;
@@ -775,10 +775,7 @@ footer {
   footer .medium-11 {
     flex-basis: 91.6666666667%; }
   footer .medium-12 {
-    flex-basis: 100%; }
-
-  .card {
-    width: 100%; } }
+    flex-basis: 100%; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   header, nav, main, footer {
@@ -814,5 +811,8 @@ footer {
   footer .large-11 {
     flex-basis: 91.6666666667%; }
   footer .large-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  main div#myCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
 /* end of media query */

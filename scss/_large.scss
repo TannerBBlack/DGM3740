@@ -15,3 +15,8 @@
             .large-#{$i} {flex-basis: $w;}	
         } // end loop
     }
+main {
+    div#myCards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

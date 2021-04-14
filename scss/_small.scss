@@ -30,29 +30,9 @@ header {
         float: right;
         float: inline-end;
         margin-top: 50px;
+        color: white;
     }
 } // end of header
-
-// nav {background-color: #111;
-//     ul {margin:0; 
-//         padding: 0;
-//         list-style-type: none;
-//         li { 
-//             width: 25%; 
-//             float: left;
-//         }
-//     }
-    
-//     li.active {background-color: #333}
-//     a {
-//         display: block;
-//         padding: .8rem 0; /*44px min*/
-//         color: #eee;
-//         text-align: center;
-//         text-decoration: none;
-//     } // end of a tag
-//     a:hover {background-color: #444;}
-// } // end of nav
 
 .search {
     width: 100%;
@@ -96,54 +76,45 @@ header {
 main{display: block; padding: 1rem $gutter;
  h1 {color: $primaryColor; font-weight: $heavyWeight;}
  figcaption {text-align: center; font-size: .8rem;}
+ div#myCards {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    figure {
-        width: 100%;
-        img {width: 100%; opacity: 75%;}
-    }
-    :hover {opacity: 100%;}
-    .post-title {
-        color: #eee;
-        background-color: #444;
-    }
-    width: 100%;
-    max-width: 250px;
-    height: 250px;
-    margin: 5px;
-    margin-bottom: 50px;
-    font-size: 16px;
+figure {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    img {width: 100%;}
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        padding: .3rem .2vh;
+    }
 }
 
- .card .title {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    margin-top: -20px;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 4px;
-    background-color: black;
-    opacity: 100%;
+section {
+    margin: 2%;
+    background-color: rgb(118, 194, 230);
 }
-// end of main
+
+section div {
+    display: grid;
+    grid-template-columns: 1fr;
+    p {margin-left: 10px;}
+}
+
+.mapouter {
+    width: 100%;
+    margin: auto;
+    iframe {
+        width: 100%;
+    }
+}
+} // end of main
 
 
 footer {
