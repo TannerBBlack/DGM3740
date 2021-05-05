@@ -574,7 +574,7 @@ footer {
 #primaryNav li.current-menu-parent {
   background-color: rgba(0, 0, 0, 0.2); }
 
-@media only screen and (max-width: 63.9375em) {
+@media only screen and (max-width: 559.999px) {
   /* Navigation Button  -------------------------------------------------------- */
   body {
     padding-top: 44px; }
